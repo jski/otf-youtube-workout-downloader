@@ -1,0 +1,12 @@
+version: '3'
+services:
+  download-otf-videos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jski/otf-youtube-workout-downloader:latest
+    restart: on-failure:1
+    container_name: download-otf-videos
+    volumes:
+      - ./otf-videos:/app/otf-videos
+    tty: true
