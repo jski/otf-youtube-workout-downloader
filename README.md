@@ -6,7 +6,7 @@ For this tool you will need either **Python 3** (tested working on 3.8, but othe
 
 ## Usage
 - For running straight from Dockerhub image (easiest):
-    1. `docker run -v otf-videos:/app/otf-videos jski/otf-youtube-workout-downloader:latest`
+    1. `docker run -v $PWD/otf-videos:/app/otf-videos jski/otf-youtube-workout-downloader:latest`
 
 - For building from source and using Docker:
     1. `docker-compose build`
@@ -18,3 +18,5 @@ For this tool you will need either **Python 3** (tested working on 3.8, but othe
     1. `python download-otf-videos.py`
 
 All three methods will put the files in a folder relative to your local path called /otf-videos. Running it multiple times will not redownload files, it will only download new ones you don't already have. I went with mp4 format as I imagine it is the most compatible with devices people would like to use to play them.
+
+I have tested this on Windows 10 (Powershell Core 7) and MacOS. If you have any issues, feel free to let me know in the Issues tab above. Thanks!
