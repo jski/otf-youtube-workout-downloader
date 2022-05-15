@@ -3,7 +3,12 @@
 ![alt text](https://img.shields.io/docker/cloud/automated/jski/otf-youtube-workout-downloader.svg "Build Automation Status")
 ![alt text](https://img.shields.io/docker/pulls/jski/otf-youtube-workout-downloader.svg "Dockerhub Pulls")
 
+## Update: 2022
+Orangetheory Fitness stopped posting these at home videos in mid 2021, so there will be no cause to continue running this tool. I will continue to keep it updated to download the videos uploaded in case you would like to personally archive them, but don't expect new content, as it's not being done by OTF any longer.
 
+Also note that there are almost 40 gigabytes worth of videos here, so this tool will take a while on first run!
+
+## Intro
 This tool can be used to download the videos from the Orangetheory official YouTube page in place during the nationwide shutdown of studios. By doing this, you can keep the videos even if they are deleted by OTF at the end of the shutdown, or if you want to move them to a device which has no internet connection.
 
 ## Prerequisites
