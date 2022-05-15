@@ -1,15 +1,18 @@
-import youtube_dl
+import yt_dlp as youtube_dl
+
 
 def download_videos(url):
-    
-    video_container = 'mp4'
+
+    video_container = "mp4"
     ydl_opts = {
-        'outtmpl': 'otf-videos/%(title)s.%(ext)s',
-        'merge_output_format': video_container,
-        'format': 'best[height<=720]',
-        'quiet': True,
-        'writeautomaticsub': True,
-        'nooverwrites': True
+        "outtmpl": "otf-videos/%(title)s.%(ext)s",
+        "merge_output_format": video_container,
+        "format": "best[height<=720]",
+        "quiet": False,
+        "writeautomaticsub": True,
+        "writesub": True,
+        "nooverwrites": True,
+        "subtitleslangs":['en']
     }
     ydl = youtube_dl.YoutubeDL(ydl_opts)
     with ydl:
